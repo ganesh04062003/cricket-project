@@ -1,6 +1,7 @@
-cricketers = ["MS Dhoni", "Virat Kohli", "Sachin Tendulkar"]
+from colorama import Fore, Style
 
-print("My Favorite Cricketers:")
+cricketers = ["MS Dhoni", "Virat Kohli", "Sachin Tendulkar", "Rohit Sharma"]
+
+print(Fore.CYAN + "My Favorite Cricketers:" + Style.RESET_ALL)
 for player in cricketers:
-    print(f"- {player}")
-cricketers.append("Rohit Sharma")
+    print(f"- {Fore.YELLOW}{player}{Style.RESET_ALL}")
